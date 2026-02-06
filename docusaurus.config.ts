@@ -3,12 +3,12 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "Senior Frontend Interview Prep",
+  title: "Frontend Interview Prep",
   tagline:
     "Comprehensive guide for senior-level frontend engineering interviews",
   favicon: "img/favicon.ico",
 
-  url: "https://your-site.vercel.app",
+  url: "https://frontend-guide-tau.vercel.app",
   baseUrl: "/",
 
   organizationName: "your-org",
@@ -42,7 +42,7 @@ const config: Config = {
   themeConfig: {
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "Frontend Interview Prep",
+      title: "<Frontend Guide />",
       items: [
         {
           type: "docSidebar",
@@ -52,7 +52,7 @@ const config: Config = {
         },
         {
           type: "search",
-          position: "right",
+          position: "left",
         },
       ],
     },
@@ -86,7 +86,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Interview Prep Docs. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Frontend Guide. Built by siddharthmourya.`,
     },
     prism: {
       theme: prismThemes.github,
