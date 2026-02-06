@@ -1,0 +1,84 @@
+/* ------------------------------
+   Typography – Balanced & Readable
+-------------------------------- */
+:root {
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.7;
+}
+
+.markdown h1 {
+  font-size: 1.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown h2 {
+  font-size: 1.45rem;
+  margin-top: 2.5rem;
+  padding-bottom: 0.4rem;
+}
+
+.markdown h3 {
+  font-size: 1.2rem;
+  margin-top: 1.75rem;
+}
+
+.markdown p,
+.markdown li {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.markdown code {
+  font-size: 0.95rem;
+}
+
+pre {
+  font-size: 0.95rem;
+}
+
+/* ------------------------------
+   Sidebar Hierarchy & Contrast Fix
+-------------------------------- */
+
+/* Default sidebar link */
+.menu__link {
+  font-size: 0.95rem;
+  color: var(--ifm-font-color-base);
+  border-radius: 6px;
+  padding: 0.45rem 0.75rem;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+/* Hover */
+.menu__link:hover {
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-font-color-base);
+}
+
+/* ACTIVE PAGE (leaf node) */
+.menu__link--active:not(.menu__link--sublist) {
+  background: var(--ifm-color-primary);
+  color: white;
+  font-weight: 600;
+}
+
+/* Parent category label when child is active */
+.menu__list-item-collapsible > .menu__link {
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-heading-color);
+  font-weight: 600;
+}
+
+/* Prevent parent from turning white */
+.menu__list-item-collapsible > .menu__link--active {
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-heading-color);
+}
+
+/* Child indentation clarity */
+.menu__list .menu__list {
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--ifm-color-emphasis-200);
+}
