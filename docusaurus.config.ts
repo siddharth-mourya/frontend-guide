@@ -44,12 +44,6 @@ const config: Config = {
       title: "<Frontend Tauji />",
       items: [
         {
-          type: "docSidebar",
-          sidebarId: "tutorialSidebar",
-          position: "left",
-          label: "Topics",
-        },
-        {
           type: "search",
           position: "left",
         },
@@ -85,7 +79,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Frontend Tauji. Built by siddharthmourya.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Frontend Tauji "siddharthmourya". Built with docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
